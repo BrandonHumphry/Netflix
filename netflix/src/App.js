@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
+import Row from './Row.js';
+import requests from './requests'
 
 function App() {
   return (
     <div className="App">
-      {/* API Key */}
-      {/* a17804ed558823f3a468f7d87c09de92 */}
+      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/>
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}/>
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>
     </div>
   );
 }
