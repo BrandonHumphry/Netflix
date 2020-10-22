@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import "./Row.css";
 
+// common base url for image in movies object
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-// common base url for image in movies object
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
 
