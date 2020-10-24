@@ -6,8 +6,14 @@
   width: 100%;
   padding: 20px;
   height: 30px;
-  background-color: #111;
   z-index: 1;
+  /* transition fade in */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_black {
+  background-color: #111;
 }
 
 .nav_logo {
